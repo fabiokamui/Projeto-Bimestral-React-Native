@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import LottieView from 'lottie-react-native'; // Importe o componente de animação
+import LottieView from 'lottie-react-native'; 
 
 const App = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Aqui você pode adicionar lógica para verificar o nome de usuário e senha
-    // Por exemplo, você pode comparar com valores fixos ou enviar uma solicitação para um servidor para autenticar
-
-    // Exemplo simples apenas para demonstração
+    
     if (username === 'usuario' && password === 'senha') {
       alert('Login bem-sucedido!');
-      // Redirecionar para outra tela após o login bem-sucedido
-      // navigation.navigate('PaginaSecreta');
+      
     } else {
       alert('Usuário ou senha incorretos. Tente novamente.');
     }
@@ -22,8 +18,8 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <LottieView // Componente de animação de chuva
-        source={require('./rain_animation.json')} // Coloque o caminho para o arquivo JSON de animação
+      <LottieView 
+        source={require('./rain_animation.json')} 
         autoPlay
         loop
         style={styles.animation}
@@ -64,7 +60,7 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     width: '80%',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Background transparente para a chuva aparecer
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', 
     borderRadius: 10,
     padding: 20,
     alignItems: 'center',
