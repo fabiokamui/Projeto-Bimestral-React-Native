@@ -1,11 +1,11 @@
-// screens/DetailsScreen.js
+// screens/ProfileScreen.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const DetailsScreen = () => {
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Tela de Detalhes</Text>
+      <Text style={styles.text}>Tela de Perfil</Text>
     </View>
   );
 };
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffffff',
   },
   text: {
     fontSize: 18,
@@ -23,5 +23,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailsScreen;
+export default ProfileScreen;
 

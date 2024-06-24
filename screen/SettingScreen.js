@@ -1,11 +1,11 @@
-// screens/DetailsScreen.js
+// screens/SettingsScreen.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const DetailsScreen = () => {
+const SettingsScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Tela de Detalhes</Text>
+      <Text style={styles.text}>Tela de Configurações</Text>
     </View>
   );
 };
@@ -23,5 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailsScreen;
-
+export default SettingsScreen;
